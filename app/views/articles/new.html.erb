@@ -1,0 +1,24 @@
+<h1> New Article </h1>
+
+<%= form_with scope: :article, url: articles_path, local: true do |form| %>
+  <p>
+    <%= form.label :title %><br>
+    <%= form.text_field :title %>
+  </p>
+
+  <p>
+    <%= form.label :text %><br>
+    <%= form.text_area :text %>
+  </p>
+
+  <p>
+    <%= form.submit %>
+  </p>
+
+  <!-- <br /> -->
+
+  <!-- <%= radio_button_tag(:age, "child") %>
+<%= label_tag(:age_child, "I am younger than 21") %>
+<%= radio_button_tag(:age, "adult") %>
+<%= label_tag(:age_adult, "I'm over 21") %> -->
+<% end %>
